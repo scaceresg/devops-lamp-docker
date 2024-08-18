@@ -11,7 +11,8 @@ RUN <<EOF
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends git
 EOF
-# sudo docker-php-ext-install mysqli
+# sudo docker-php-ext-install mysqli 
+# (You have to install it manually when connecting the php file to mysql)
 # sudo docker-php-ext-enable mysqli
 
 # Create and add user to /bin/bash and group

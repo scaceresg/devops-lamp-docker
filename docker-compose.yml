@@ -4,7 +4,7 @@ services:
   web:
     build:
       context: php-web
-      target: builder
+      target: builder # Builds using the Dockerfile in php-web
     ports:
       - '80:80'
     volumes:
@@ -18,10 +18,10 @@ services:
     environment:
       MYSQL_DATABASE: lamp_docker
       MYSQL_USER: lamp_admin
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_PASSWORD: password # Should be in env var
+      MYSQL_ROOT_PASSWORD: 12345 
     volumes:
-      - './mysql:/docker-entrypoint-initdb.d'
+      - './mysql:/docker-entrypoint-initdb.d' # sync persistent initial SQL file
 
   # PHP MyAdmin service
   phpmyadmin:
