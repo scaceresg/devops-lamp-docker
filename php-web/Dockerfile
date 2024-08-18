@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-FROM --platform=$BUILDPLATFORM php:8.1.1-apache as builder
+FROM --platform=$BUILDPLATFORM php:8.3.10-apache as builder
 
 CMD ["apache2-foreground"]
 
@@ -12,7 +12,8 @@ sudo apt-get update
 sudo apt-get install -y --no-install-recommends git
 EOF
 # sudo docker-php-ext-install mysqli 
-# (You have to install it manually when connecting the php file to mysql)
+# (You have to install it manually when connecting the php file to mysql 
+# -> Use Docker Desktop terminal and reboot after installing)
 # sudo docker-php-ext-enable mysqli
 
 # Create and add user to /bin/bash and group
