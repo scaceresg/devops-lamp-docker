@@ -20,6 +20,8 @@ Specifically, I used the `php:8.3.10-apache` official image by preparing a [Dock
 
 I also used **Docker Compose** to bring up the database and phpmyadmin services using their latest images from Docker Hub.
 
+You can build the `docker-compose.yml` file by running `docker compose up` in your terminal.
+
 ## PHP Webpage
 
 Finally, I prepared a set of `.php` files which include:
