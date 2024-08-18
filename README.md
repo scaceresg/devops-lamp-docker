@@ -16,7 +16,7 @@ A LAMP stack is a bundle of technologies to build websites. They include:
 
 I used **Docker images** for `php` using the `apache` server, which can be found in [Docker Hub: PHP](https://hub.docker.com/_/php/).
 
-Specifically, I used the `php:8.3.10-apache` official image by preparing a Dockerfile.
+Specifically, I used the `php:8.3.10-apache` official image by preparing a [Dockerfile](https://github.com/scaceresg/proj-lamp-docker/blob/f546479b3a757a902cf25ddbcd98c85f09113521/php-web/Dockerfile).
 
 I also used **Docker Compose** to bring up the database and phpmyadmin services using their latest images from Docker Hub.
 
