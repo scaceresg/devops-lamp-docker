@@ -26,7 +26,7 @@ You can build the `docker-compose.yml` file by running `docker compose up` in yo
 
 Finally, I prepared a set of `.php` files which include:
 
-* `index.php` includes a brief presentation about myself and my email. It also includes a button to connect to the MySQL database.
+* `index.php` includes a brief presentation about myself and my email. It also includes a button to connect to the MySQL database. I used the help of chatGPT to generate this web presentation file.
 
 * `phpinfo.php` shows info about the php that is running behind the webpage given by the `phpinfo()` function.
 
