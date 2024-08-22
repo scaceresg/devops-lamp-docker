@@ -24,7 +24,7 @@ Then, I prepared and placed a **Dockerfile** for this image in `./php-web/`. The
 Finally, I prepared a `docker-compose.yml` file to bring up the services in the LAMP stack: MySQL 
 database and PHPMyAdmin. I prepared the `.yml` file by setting the latest images for these services.
 
-## PHP Webpage
+## PHP Webpages
 
 Finally, I prepared a set of `.php` files which include:
 
@@ -39,4 +39,5 @@ Finally, I prepared a set of `.php` files which include:
 
 ## Docker Compose
 
-Once the elements were functioning  LAMP stack 
+The final step was to deploy the LAMP stack by running `docker-compose up` and accessing the 
+webpages via the `localhost`.
