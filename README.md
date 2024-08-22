@@ -12,22 +12,31 @@ A LAMP stack is a bundle of technologies to build websites. They include:
 
 * P: PHP programming language
 
-## Docker Images and Docker Compose
+## Docker Images and Docker
 
-I used **Docker images** for `php` using the `apache` server, which can be found in [Docker Hub: PHP](https://hub.docker.com/_/php/).
+To set up the PHP webpage for the LAMP stack, I decided to find a **Docker Image** for `php` that uses 
+the `apache` server in [Docker Hub: PHP](https://hub.docker.com/_/php/). I filtered by the tag `apache`
+and found the `php:8.3.10-apache` official image.
 
-Specifically, I used the `php:8.3.10-apache` official image by preparing a [Dockerfile](https://github.com/scaceresg/proj-lamp-docker/blob/f546479b3a757a902cf25ddbcd98c85f09113521/php-web/Dockerfile).
+Then, I prepared and placed a **Dockerfile** for this image in `./php-web/`. The image runs 
+`apache2-foreground`.
 
-I also used **Docker Compose** to bring up the database and phpmyadmin services using their latest images from Docker Hub.
-
-You can build the `docker-compose.yml` file by running `docker compose up` in your terminal.
+Finally, I prepared a `docker-compose.yml` file to bring up the services in the LAMP stack: MySQL 
+database and PHPMyAdmin. I prepared the `.yml` file by setting the latest images for these services.
 
 ## PHP Webpage
 
 Finally, I prepared a set of `.php` files which include:
 
-* `index.php` includes a brief presentation about myself and my email. It also includes a button to connect to the MySQL database. I used the help of chatGPT to generate this web presentation file.
+* `index.php` includes a brief presentation about myself and my email. It also includes a button
+  to connect to the MySQL database. I used chatGPT to generate this web presentation file.
 
-* `phpinfo.php` shows info about the php that is running behind the webpage given by the `phpinfo()` function.
+* `phpinfo.php` shows information about the PHP running behind the webpage given by the `phpinfo()`
+  function.
 
-* `database.php`: contains information submitted to the initial database and it is used to confirm the connection to the MySQL database from the `index.php` file.
+* `database.php`: contains information submitted to the initial database, which is used to confirm
+  the connection to the MySQL database from the `index.php` file.
+
+## Docker Compose
+
+Once the elements were functioning  LAMP stack 
